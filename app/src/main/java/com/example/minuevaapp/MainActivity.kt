@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        // Obteniendo las referencias a los elementos de diseño manualmente
+        
         editText1 = findViewById(R.id.ediText1)
         editText2 = findViewById(R.id.ediText2)
         compareButton = findViewById(R.id.compareButton)
