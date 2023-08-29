@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mi Nueva app</string>
+    <string name="hola_amigos">hola amigos</string>
+    <string name="button_compare">Comparar</string>
+    <string name="Mi_nuevo_proyecto" />
+    <string name="mi_nueva_aplicacion" />
+    <string name="comparar">Comparar</string>
+    <string name="mi_app" />
+</resources>
