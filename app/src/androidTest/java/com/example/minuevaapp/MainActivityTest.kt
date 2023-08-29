@@ -20,7 +20,7 @@ class MainActivityTest {
     @get:Rule
     val activityScenarioRule = ActivityScenarioRule(MainActivity::class.java)
 
-    private lateinit var viewModel: MainViewModel // Asegúrate de que el ViewModel esté disponible
+    private lateinit var viewModel: MainViewModel 
 
     @Before
     fun setUp() {
@@ -31,12 +31,12 @@ class MainActivityTest {
     }
     @Test
     fun testCompareButton() {
-        // Simular la interacción del usuario
+        
         onView(withId(R.id.ediText1)).perform(typeText("Mi nuevo proyecto"))
         onView(withId(R.id.ediText2)).perform(typeText("Hola amigos"))
         onView(withId(R.id.compareButton)).perform(click())
 
-        // Verificar que el resultado se muestra en el TextView
+      
         onView(withId(R.id.resultTextView)).check(matches(withText("Las cadenas son diferentes")))
     }
 }
